@@ -8,7 +8,6 @@ function ArtistCard({ artist }:ArtistCardProps):ReactElement{
     return (
         <article
             className="ArtistCard"
-            onClick={() => onSelectArtist(artist)}
             style={{backgroundImage: `url(${artist.image})`}}
         >
             <div>
