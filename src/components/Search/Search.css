@@ -22,3 +22,14 @@
 .SearchBar:focus{
     outline: none;
 }
+
+@media (max-width: 600px) {
+    .SearchBar{
+        height: 3em;
+    }
+}
+@media (max-width: 500px) {
+    .SearchBar{
+        height: 2em;
+    }
+}

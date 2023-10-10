@@ -23,3 +23,23 @@ main{
 .Header h1{
     margin: 1em;
 }
+
+@media (max-width: 600px) {
+    .Header h1{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    .Header {
+        text-align: left;
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .Header h1{
+        margin: unset;
+        font-size: 1.5em;
+    }
+}
