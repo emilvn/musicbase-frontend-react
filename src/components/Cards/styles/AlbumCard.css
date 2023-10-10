@@ -1,0 +1,43 @@
+@import "../../../styles/colors.css";
+.AlbumCard{
+    position: relative;
+    max-width: 90vw;
+    min-height: 25vh;
+    background-size: cover;
+    color: var(--dark-blue);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    background-color: var(--light-grey);
+    border-radius: 0.5em;
+}
+.AlbumCard h3{
+    margin: 0.5em;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--orange);
+}
+.AlbumCard div{
+    background-color: var(--grey-opague);
+    width: 100%;
+    padding: 0.2em;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+}
+.AlbumCardArtists{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: var(--dark-blue);
+}
+.AlbumCard ul{
+    list-style: "-";
+    line-height: 1.5em;
+}

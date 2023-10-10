@@ -1,0 +1,23 @@
+.TrackList:not(.AlbumCard .TrackList){
+    padding-inline: unset;
+    margin-block: unset;
+    margin-top: 0;
+    padding-top: 1em;
+    background-color: var(--light-grey);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    grid-column: span 3;
+}
+.TrackList:not(.AlbumCard .TrackList) li{
+    margin: 0 1em 0.5em 1em;
+    list-style: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: var(--grey-opague);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-blue);
+}
+

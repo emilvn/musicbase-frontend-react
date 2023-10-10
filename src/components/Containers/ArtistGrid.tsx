@@ -1,7 +1,7 @@
-import ArtistCard from "../ArtistCard/ArtistCard.tsx";
+import ArtistCard from "../Cards/ArtistCard.tsx";
 import {ReactElement} from "react";
 import {Artist} from "../../models/Artist.ts";
-import "./ArtistGrid.css";
+import "./styles/ArtistGrid.css";
 
 interface ArtistGridProps {
     artists: Artist[]

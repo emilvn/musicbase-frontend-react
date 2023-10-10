@@ -1,9 +1,11 @@
 import {ReactElement, useState} from "react";
 import "./Tabs.css";
-import ArtistGrid from "../ArtistGrid/ArtistGrid.tsx";
+import ArtistGrid from "../Containers/ArtistGrid.tsx";
 import {Artist} from "../../models/Artist.ts";
 import {Album} from "../../models/Albums.ts";
 import {Track} from "../../models/Track.ts";
+import AlbumGrid from "../Containers/AlbumGrid.tsx";
+import TrackList from "../Containers/TrackList.tsx";
 
 interface TabsProps {
     artists: Artist[];
@@ -11,7 +13,7 @@ interface TabsProps {
     tracks: Track[];
 }
 
-function Tabs({artists}:TabsProps):ReactElement {
+function Tabs({artists, albums, tracks}:TabsProps):ReactElement {
     const [selectedTab, setSelectedTab] = useState<string>("artists");
 
     const handleTabClick = (tabName:string) => {
@@ -42,7 +44,8 @@ function Tabs({artists}:TabsProps):ReactElement {
                 Tracks
             </h2>
             { selectedTab === "artists" && <ArtistGrid artists={artists}/> }
-
+            { selectedTab === "albums" && <AlbumGrid albums={albums}/> }
+            { selectedTab === "tracks" && <TrackList tracks={tracks}/> }
         </div>
     );
 }

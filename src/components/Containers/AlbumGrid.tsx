@@ -1,6 +1,7 @@
 import {Album} from "../../models/Albums.ts";
 import {ReactElement} from "react";
-import AlbumCard from "../AlbumCard/AlbumCard.tsx";
+import AlbumCard from "../Cards/AlbumCard.tsx";
+import "./styles/AlbumGrid.css";
 
 interface AlbumGridProps {
     albums: Album[]
@@ -8,7 +9,7 @@ interface AlbumGridProps {
 
 function AlbumGrid({albums}:AlbumGridProps):ReactElement{
     return (
-        <div className="ArtistGrid">
+        <div className="AlbumGrid">
             {albums.map((album:Album) => (
                 <AlbumCard
                     key={album.id}
