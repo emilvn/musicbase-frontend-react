@@ -1,0 +1,24 @@
+.SearchDiv{
+    background-color: var(--light-grey);
+    border-radius: 3em;
+    display: flex;
+    align-items: center;
+    padding: 0 1em 0 1em;
+}
+
+.SearchDiv svg{
+    max-width: 1.5em;
+}
+
+.SearchBar{
+    height: 4em;
+    min-width: 30vw;
+    width: 100%;
+    border-radius: 3em;
+    border: none;
+    background-color: transparent;
+}
+
+.SearchBar:focus{
+    outline: none;
+}

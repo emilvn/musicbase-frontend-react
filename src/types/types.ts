@@ -1,18 +1,21 @@
-export interface AlbumData {
+export interface AlbumData extends ItemData{
     id: string;
     name: string;
     image: string;
     artists: ArtistData[];
     tracks: TrackData[];
 }
-export interface ArtistData {
+export interface ArtistData extends ItemData{
     id: string;
     name: string;
     image: string;
 }
-export interface TrackData {
+export interface TrackData extends ItemData{
     id: string;
     name: string;
 }
 
-export type ItemData = ArtistData | AlbumData | TrackData;
+export interface ItemData {
+    id: string;
+    name: string;
+}

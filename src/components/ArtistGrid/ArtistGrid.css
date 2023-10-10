@@ -1,0 +1,41 @@
+@import "../../styles/colors.css";
+.ArtistGrid{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 1em;
+    background-color: var(--light-grey);
+}
+
+@media (min-width: 550px){
+    .ArtistGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 900px) {
+    .ArtistGrid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1200px) {
+    .ArtistGrid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (min-width: 1500px) {
+    .ArtistGrid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media (min-width: 1800px) {
+    .ArtistGrid{
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+@media (min-width: 2100px) {
+    .ArtistGrid{
+        grid-template-columns: repeat(8, 1fr);
+    }
+}

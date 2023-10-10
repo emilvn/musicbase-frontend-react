@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import {ReactElement, useState} from "react";
 import "./Tabs.css";
-function Tabs() {
-    const [selectedTab, setSelectedTab] = useState("artists");
+import ArtistGrid from "../ArtistGrid/ArtistGrid.tsx";
+import {Artist} from "../../models/Artist.ts";
+import {Album} from "../../models/Albums.ts";
+import {Track} from "../../models/Track.ts";
 
-    const handleTabClick = (tabName) => {
+interface TabsProps {
+    artists: Artist[];
+    albums: Album[];
+    tracks: Track[];
+}
+
+function Tabs({artists}:TabsProps):ReactElement {
+    const [selectedTab, setSelectedTab] = useState<string>("artists");
+
+    const handleTabClick = (tabName:string) => {
         setSelectedTab(tabName);
     };
 
@@ -30,6 +41,8 @@ function Tabs() {
             >
                 Tracks
             </h2>
+            { selectedTab === "artists" && <ArtistGrid artists={artists}/> }
+
         </div>
     );
 }

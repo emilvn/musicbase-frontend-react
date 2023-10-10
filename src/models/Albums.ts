@@ -7,18 +7,18 @@ export class Album extends Item{
 	private readonly _image:string;
 	private readonly _artists:Artist[];
 	private readonly _tracks:Track[];
-	constructor(AlbumData:AlbumData){
-		super(AlbumData);
-		this._image = AlbumData.image;
-		this._artists = AlbumData.artists.map(artist => new Artist(artist));
-		this._tracks = (AlbumData.tracks)
-		? AlbumData.tracks.map(track => new Track(track))
+	constructor(ItemData:AlbumData){
+		super(ItemData);
+		this._image = ItemData.image;
+		this._artists = ItemData.artists.map(artist => new Artist(artist));
+		this._tracks = (ItemData.tracks)
+		? ItemData.tracks.map(track => new Track(track))
 		: [];
 	}
 	get image():string{
 		return this._image;
 	}
-   get artistNames():string {
+   get artistNames():string{
       return this._artists.map(artist => artist.name).reduce((acc,curr)=> acc + curr + ', ', "").slice(0, -2);
     }
 	get tracks():Track[]{

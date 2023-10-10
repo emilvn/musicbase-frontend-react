@@ -1,11 +1,10 @@
-import {ItemData} from "../../types/types.ts";
-export class DataService<T>{
+export class DataService<D,T>{
     private static readonly endpoint:string = "https://musicbase-backend.azurewebsites.net";
     private readonly _url:string;
     private readonly _uri:string;
-    private readonly _Model:new (data: ItemData) => T;
+    private readonly _Model:new (I:D) => T;
 
-    constructor(uri:string, Model:new (data: ItemData) => T){
+    constructor(uri:string, Model:new (I:D) => T){
         this._uri = uri;
         this._url = DataService.endpoint + uri;
         this._Model = Model;
@@ -17,7 +16,7 @@ export class DataService<T>{
             throw await response.json();
         }
         const data = await response.json();
-        return data.map((object:ItemData) => new this._Model(object));
+        return data.map((object:D) => new this._Model(object));
     }
 
     async getById(id:string):Promise<T>{
@@ -29,7 +28,7 @@ export class DataService<T>{
         return new this._Model(data);
     }
 
-    async addOne(object:ItemData):Promise<void>{
+    async addOne(object:D):Promise<void>{
         const response:Response = await fetch(this._url, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -40,7 +39,7 @@ export class DataService<T>{
         }
     }
 
-    async updateOne(id:string, object:ItemData):Promise<void>{
+    async updateOne(id:string, object:D):Promise<void>{
         const response:Response = await fetch(this._url + "/" + id, {
             method: "PUT",
             headers: {"Content-Type": "application/json"},
@@ -65,6 +64,6 @@ export class DataService<T>{
             throw await response.json();
         }
         const data = await response.json();
-        return data.map((object:ItemData) => new this._Model(object));
+        return data.map((object:D) => new this._Model(object));
     }
 }
