@@ -4,7 +4,7 @@ import Tabs from "../Tabs/Tabs.tsx";
 import {Artist} from "../../models/Artist.ts";
 import {Album} from "../../models/Albums.ts";
 import {Track} from "../../models/Track.ts";
-import {DataService} from "../../utils/DataService/DataService.ts";
+import {DataService} from "../../utils/DataService.ts";
 import {AlbumData, ArtistData, TrackData} from "../../types/types.ts";
 import Search from "../Search/Search.tsx";
 
