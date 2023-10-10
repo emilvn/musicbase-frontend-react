@@ -1,4 +1,4 @@
-@import "src/styles/colors.css";
+@import "../../styles/colors.css";
 main{
     padding-top: 15vh;
     min-height: 71vh;

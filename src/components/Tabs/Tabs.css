@@ -1,4 +1,4 @@
-@import "src/styles/colors.css";
+@import "../../styles/colors.css";
 .Tabs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
