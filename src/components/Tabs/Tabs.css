@@ -1,0 +1,46 @@
+:root{
+    --dark-blue: rgb(1, 22, 39);
+    --grey-opague: rgba(220, 220, 220, 0.46);
+    --white: rgb(253, 255, 252);
+    --cyan: #2ec4b6;
+    --red: #e71d36;
+    --orange: #ff9f1c;
+    --light-grey: #EFEFEF;
+    --green: #5cd73f;
+    --yellow: #e8d929;
+}
+.Tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Tabs h2 {
+    margin: 0;
+    padding: .5em;
+    cursor: pointer;
+}
+.Tabs>div{
+    grid-column: span 3;
+}
+.Tabs h2.selected {
+    border: 1px solid rgba(0, 0, 0, 0.44);
+    border-radius: 0.1em 0.1em 0 0;
+    border-bottom: none;
+    background-color: var(--light-grey);
+}
+
+.Tabs h2:not(.selected) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.44);
+}
+
+.Tabs>div>section, #Tabs>div>ul {
+    top: 1vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-grey);
+}
+
+.hide {
+    display: none;
+}
