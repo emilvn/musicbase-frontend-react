@@ -1,4 +1,4 @@
-import './MusicBase.css'
+import '../../styles/MusicBase.css'
 import {ReactElement, useEffect, useState} from "react";
 import Tabs from "../Tabs/Tabs.tsx";
 import Artist from "../../models/Artist.ts";

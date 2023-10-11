@@ -1,6 +1,6 @@
 import {ChangeEvent, Dispatch, ReactElement, SetStateAction} from "react";
 import {FaSearch} from "react-icons/fa";
-import "./Search.css";
+import "../../styles/Search.css";
 import DataService from "../../utils/DataService.ts";
 import {AlbumData, ArtistData, TrackData} from "../../types/types.ts";
 import Artist from "../../models/Artist.ts";

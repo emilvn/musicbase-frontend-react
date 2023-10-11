@@ -1,7 +1,7 @@
 import Album from "../../models/Albums.ts";
 import {ReactElement} from "react";
 import AlbumCard from "../Cards/AlbumCard.tsx";
-import "./styles/AlbumGrid.css";
+import "../../styles/AlbumGrid.css";
 
 interface AlbumGridProps {
     albums: Album[]

@@ -1,4 +1,4 @@
-@import "../../../styles/colors.css";
+@import "variables.css";
 .ArtistGrid{
     padding-top: 1em;
     display: grid;

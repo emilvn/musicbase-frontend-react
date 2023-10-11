@@ -1,5 +1,5 @@
 import {ReactElement, useState} from "react";
-import "./Tabs.css";
+import "../../styles/Tabs.css";
 import ArtistGrid from "../Containers/ArtistGrid.tsx";
 import Artist from "../../models/Artist.ts";
 import Album from "../../models/Albums.ts";

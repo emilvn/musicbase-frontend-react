@@ -1,7 +1,7 @@
 import {ReactElement} from "react";
 import Track from "../../models/Track.ts";
 import TrackCard from "../Cards/TrackCard.tsx";
-import "./styles/TrackList.css";
+import "../../styles/TrackList.css";
 
 interface TrackListProps {
     tracks: Track[];

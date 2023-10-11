@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
 import Artist from "../../models/Artist.ts";
-import "./styles/ArtistCard.css";
+import "../../styles/ArtistCard.css";
 interface ArtistCardProps {
     artist: Artist
 }
