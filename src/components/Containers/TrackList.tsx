@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import {Track} from "../../models/Track.ts";
+import Track from "../../models/Track.ts";
 import TrackCard from "../Cards/TrackCard.tsx";
 import "./styles/TrackList.css";
 

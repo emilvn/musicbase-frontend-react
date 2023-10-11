@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import {Artist} from "../../models/Artist.ts";
+import Artist from "../../models/Artist.ts";
 import "./styles/ArtistCard.css";
 interface ArtistCardProps {
     artist: Artist

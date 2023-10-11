@@ -1,4 +1,4 @@
-import {Track} from "../../models/Track.ts";
+import Track from "../../models/Track.ts";
 import {ReactElement} from "react";
 
 interface TrackCardProps {

@@ -1,11 +1,11 @@
 import {ChangeEvent, Dispatch, ReactElement, SetStateAction} from "react";
 import {FaSearch} from "react-icons/fa";
 import "./Search.css";
-import {DataService} from "../../utils/DataService.ts";
+import DataService from "../../utils/DataService.ts";
 import {AlbumData, ArtistData, TrackData} from "../../types/types.ts";
-import {Artist} from "../../models/Artist.ts";
-import {Album} from "../../models/Albums.ts";
-import {Track} from "../../models/Track.ts";
+import Artist from "../../models/Artist.ts";
+import Album from "../../models/Albums.ts";
+import Track from "../../models/Track.ts";
 
 interface SearchProps {
     setArtists: Dispatch<SetStateAction<Artist[]>>;

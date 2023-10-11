@@ -1,4 +1,4 @@
-export class DataService<D,T>{
+class DataService<D,T>{
     private static readonly endpoint:string = "https://musicbase-backend.azurewebsites.net";
     private readonly _url:string;
     private readonly _uri:string;
@@ -67,3 +67,5 @@ export class DataService<D,T>{
         return data.map((object:D) => new this._Model(object));
     }
 }
+
+export default DataService;

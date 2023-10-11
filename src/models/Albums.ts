@@ -1,9 +1,9 @@
-import {Track} from "./Track.ts";
-import {Item} from "./Item.ts";
-import {Artist} from "./Artist.ts";
+import Track from "./Track.ts";
+import Item from "./Item.ts";
+import Artist from "./Artist.ts";
 import {AlbumData} from "../types/types.ts";
 
-export class Album extends Item{
+class Album extends Item{
 	private readonly _image:string;
 	private readonly _artists:Artist[];
 	private readonly _tracks:Track[];
@@ -25,4 +25,4 @@ export class Album extends Item{
 		return this._tracks.map(track => new Track(track));
 	}
 }
-
+export default Album;

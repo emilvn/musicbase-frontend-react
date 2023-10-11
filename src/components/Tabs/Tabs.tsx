@@ -1,9 +1,9 @@
 import {ReactElement, useState} from "react";
 import "./Tabs.css";
 import ArtistGrid from "../Containers/ArtistGrid.tsx";
-import {Artist} from "../../models/Artist.ts";
-import {Album} from "../../models/Albums.ts";
-import {Track} from "../../models/Track.ts";
+import Artist from "../../models/Artist.ts";
+import Album from "../../models/Albums.ts";
+import Track from "../../models/Track.ts";
 import AlbumGrid from "../Containers/AlbumGrid.tsx";
 import TrackList from "../Containers/TrackList.tsx";
 

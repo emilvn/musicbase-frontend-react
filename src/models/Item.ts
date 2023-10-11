@@ -1,5 +1,5 @@
 import { ItemData } from "../types/types.ts";
-export class Item{
+class Item{
 	private readonly _id:string;
 	private readonly _name:string;
 	constructor(ItemData: ItemData){
@@ -13,3 +13,4 @@ export class Item{
 		return this._name;
 	}
 }
+export default Item;

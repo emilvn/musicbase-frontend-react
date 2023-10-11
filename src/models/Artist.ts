@@ -1,6 +1,6 @@
-import {Item} from "./Item.ts";
+import Item from "./Item.ts";
 import {ArtistData} from "../types/types.ts";
-export class Artist extends Item{
+class Artist extends Item{
 	private readonly _image:string;
 	constructor(ItemData:ArtistData){
 		super(ItemData);
@@ -10,3 +10,4 @@ export class Artist extends Item{
 		return this._image;
 	}
 }
+export default Artist;

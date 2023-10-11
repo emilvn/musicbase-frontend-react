@@ -1,4 +1,4 @@
-import {Album} from "../../models/Albums.ts";
+import Album from "../../models/Albums.ts";
 import {ReactElement} from "react";
 import TrackList from "../Containers/TrackList.tsx";
 import "./styles/AlbumCard.css";
